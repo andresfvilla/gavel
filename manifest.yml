@@ -1,5 +1,5 @@
 ---
 applications:
 - name: watson-hackathon-judge
-  memory: 256M
-  disk_quota: 256M
+  memory: 512M
+  disk_quota: 1024M
