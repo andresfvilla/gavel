@@ -2,14 +2,7 @@ language: python
 sudo: required
 python:
 - 3.5.2
-script:
-- echo "testing"
-after_success:
-- curl -fsSL https://clis.ng.bluemix.net/install/linux | sh
-- bx api https://api.ng.bluemix.net
-- bx login
-- bx target -o andres.villa -s dev
-- bx cf push
+
 env:
   global:
   - secure: Kmq+vHaABbsQilHzw3nCxgcgu0wu6XZsrlTZzqJQgZaNR+Nb208WXu+X7uN+lOk1FcB8kOhWEsR3OaoKCalq2fT1vcOmXJOeOod4X7y7Bse+IKL4+VTR1caXb9aWJHkmmSxyrnkp1cXclQvKGs/phLDxppVVjW+soNLx5q+1fyU+svOvkdtSFtaoUvuDkUFQskYtl/F2EJg1QbjN0i4JZbznR4ljMLdv5WqA2X+TrKuHJ8iP9H+d4AhpjhJ7WoEzDqa/2kbBZwT8uUVOH9iQUsX0yk2Z/rdXSnw3mAgubqZ7rgbUchArcwtm5pAqIxlMpHmhW0HRLxzMp90vEzCl+xAEBU0vfRf8A1pVhH7OQE4Zvb8HlJJElf94IAl2l8rn73EJnrSySl9sqDAZOgzLM7NOn/dxf6UScHf+3JQvWa6e/HPVxbTn4N++TmWn2XH6EgIZ2glp4tCtqGKS15fdBUwAeXMN25HOeldPPulHaOh6P50ZZ1a6dmM5gDO2W60bVRAP3fCmJK9RSe9ZEMav2Af4PKtepilDy1syO2Z2jDVD+fpXoLUKSaCZ706UqcDRY8XCxnO4dlWQ6opwjMxjk1mNKX16G7jkhF8+fIJnHppmk7Vylid83XEopHqosSYMkDPN9NjJ3Yv14odDgxf3tH3ld8X2Ap3niY5/RTJRlWc=
@@ -20,6 +13,10 @@ env:
   - EMAIL_PASSWORD: _unused_
   - EMAIL_USER: _unused_
   - IGNORE_CONFIG_FILE: true
+  - BX_APP: gavel
+  - BX_API: https://api.ng.bluemix.net
+  - BX_ORGANIZATION: andres.villa
+  - BX_SPACE: dev
   - secure: njNYIIwfIYK42c9hbMUBLTbg16aT8vXE+crkADua9915/G1KioLhDxaEXGe2P7htSjzn1+YqArXfPF9qEm5u1gsw5MTvQctlz01mwoIqAJf9PZHb13vSSK+BSeb0WlRTkTGvpgBGrrONJVsTRSbInsNA3ZZ6jWmwNtFjayzdY8ae1afHs8MZNXRidPNQM5ISUxq+tj89qn5NnQ/BYEvEw3EDgok0r1L9gKoX5qmniS1hv4b63BzoL/gferfhDuieUd+E19ahfpz6JnEnGmDcYZbMlWmZyAgLEWuO/t/bDWZ0cGlRZygaewSkN0HtEhTprfst9r9UTVY0Ac/Lo6Ipdc4eP7H6WS4CT42yCXRoQ8u2coYe8iJkwUB8KnTwavd4gDx+MYLqRPh1nETve/2AM0/UyDpYt3XMd5wCzUtnLlmokomseKPknwV10JP8YmprFBsjg9AXBnKdaMDxbV7nCoQPPrGEzFgsnf267kkYmZ/sjD931TLYXDTq+KD6vryuNONTWFunsNrxoCr7pvq9rtB703zPtX87aGvEvGvVQa7jy3iC8S4BV2hJaF+PLeg9I38X1nmP8ZHJfpbNkdE7mg8McxKwYrorRu7KH6cAwp9SEKFlpwNRPZx5jh2OiO+cp+EtTZ6jn/QECjik636g0Z2vNCTvw4osdRbdN73CcA8=
   - secure: Jz0kApucOPKFB/xZ5l9cdE75hWn/lL8gnp+DYu6uM9d/PfdxtT2orhEhyJ/G4tuXKMsqnCyUXYi/Olrp4q6op7OJRdO95zUUqiUhlY1FPPzNrqPjk0uz3NziLqMVkMvECxRbsV8jXK8SxH4VM2/nFtrwIrc+CbjhtVmcBmnEDLDI4T4GVAxLvr2K08OpNe9d1zGIZRJcKd9DCQCnHrAOP92khAw4pUv89x/hi9z6uESg6HZvmXONio24O0iFTD4vDT4jurD2a21H/FXdge1devvKJr45FEXcjPoro2t0Rw897WRX32n4YLP3QA7bauIQyN5RBPjh9LnBuZ9vn3xwztw8hMvmB39pQnpEoSHhPm9JpyVCu8G/eh38hYXKRVgVPbxSqm0aMS5JhKFfLQa8xz0VC81MHRKgHYBxHzj9IzAHrYWQNwxFyFwbMXMsBtKK+lDmXy/U7ZSSURB+hFYHTPHbbfGBorCHBg/BMd4v9DiAWYIKk9wKM3tYm7uBi046LcEjbLnwGXP5HIRnFnHeBvNTZhCRqRTmNBF9czP9QmphHP+PHMIvPrgw5M9U502OmrVVbi4sp1QPPfOnz8BF2ybi3i9J04nzYaMtnYm/9IQIy85xeE1kIK2oM93I3bhlBlLq4A1pB3AYbmsIMAieJ6H2wtVXD7mwf0DqixkRpbw=
 
