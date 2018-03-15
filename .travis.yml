@@ -19,7 +19,7 @@ env:
   - BX_SPACE: dev
   - secure: Jz0kApucOPKFB/xZ5l9cdE75hWn/lL8gnp+DYu6uM9d/PfdxtT2orhEhyJ/G4tuXKMsqnCyUXYi/Olrp4q6op7OJRdO95zUUqiUhlY1FPPzNrqPjk0uz3NziLqMVkMvECxRbsV8jXK8SxH4VM2/nFtrwIrc+CbjhtVmcBmnEDLDI4T4GVAxLvr2K08OpNe9d1zGIZRJcKd9DCQCnHrAOP92khAw4pUv89x/hi9z6uESg6HZvmXONio24O0iFTD4vDT4jurD2a21H/FXdge1devvKJr45FEXcjPoro2t0Rw897WRX32n4YLP3QA7bauIQyN5RBPjh9LnBuZ9vn3xwztw8hMvmB39pQnpEoSHhPm9JpyVCu8G/eh38hYXKRVgVPbxSqm0aMS5JhKFfLQa8xz0VC81MHRKgHYBxHzj9IzAHrYWQNwxFyFwbMXMsBtKK+lDmXy/U7ZSSURB+hFYHTPHbbfGBorCHBg/BMd4v9DiAWYIKk9wKM3tYm7uBi046LcEjbLnwGXP5HIRnFnHeBvNTZhCRqRTmNBF9czP9QmphHP+PHMIvPrgw5M9U502OmrVVbi4sp1QPPfOnz8BF2ybi3i9J04nzYaMtnYm/9IQIy85xeE1kIK2oM93I3bhlBlLq4A1pB3AYbmsIMAieJ6H2wtVXD7mwf0DqixkRpbw=
 
-before_deploy: npm install -g https://github.com/andresfvilla/bx-blue-green
+before_deploy: npm install -g bx-blue-green
 deploy:
   provider: script
   script: 
